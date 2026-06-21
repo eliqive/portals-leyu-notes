@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 leyu – 一个安静而清晰的起点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e2a3a;
+            line-height: 1.7;
+            padding: 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-container {
+            max-width: 680px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* 开场短句：仅一个词或短句，留出呼吸空间 */
+        .opening {
+            font-size: 3.2rem;
+            font-weight: 250;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #131e2b;
+            margin-bottom: 2.5rem;
+            border-left: 3px solid #cbd5e1;
+            padding-left: 1.2rem;
+        }
+
+        .opening span {
+            font-weight: 450;
+            color: #2c3e50;
+        }
+
+        /* 承接段落：温和叙述 */
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 2.8rem;
+            color: #2c3e50;
+            max-width: 600px;
+            background: #ffffff;
+            padding: 1.6rem 1.8rem;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .intro p {
+            margin-bottom: 1.2rem;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .intro a {
+            color: #1a3b5c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #b0c4de;
+            font-weight: 450;
+            transition: color 0.15s ease, text-decoration-color 0.2s;
+        }
+
+        .intro a:hover {
+            color: #0a2647;
+            text-decoration-color: #0a2647;
+        }
+
+        /* 特点列表：干净、克制、无项目符号 */
+        .features {
+            margin: 2rem 0 2.4rem 0;
+        }
+
+        .features-title {
+            font-size: 1.0rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #4a5b6e;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            margin-bottom: 0.9rem;
+            padding: 0.2rem 0;
+            border-bottom: 1px solid #e9edf2;
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .feature-marker {
+            flex-shrink: 0;
+            width: 6px;
+            height: 6px;
+            background: #8495a8;
+            border-radius: 50%;
+            margin-top: 0.7rem;
+        }
+
+        .feature-text {
+            font-size: 1rem;
+            color: #1f2c3b;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2.2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #dce2ea;
+            font-size: 0.95rem;
+            color: #4a617a;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .closing-note {
+            max-width: 70%;
+        }
+
+        .closing small {
+            opacity: 0.65;
+            font-size: 0.8rem;
+            display: block;
+            margin-top: 0.3rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 500px) {
+            body {
+                padding: 1rem;
+            }
+
+            .opening {
+                font-size: 2.2rem;
+                padding-left: 0.8rem;
+                margin-bottom: 1.8rem;
+            }
+
+            .intro {
+                padding: 1.2rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .features-title {
+                font-size: 0.85rem;
+            }
+
+            .closing {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .closing-note {
+                max-width: 100%;
+            }
+        }
+
+        /* 保证最窄宽度下依然舒适 */
+        @media (max-width: 360px) {
+            .opening {
+                font-size: 1.8rem;
+            }
+            .feature-item {
+                gap: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-container">
+
+    <!-- 开场短句：叙述式，干净 -->
+    <div class="opening">
+        也许你只是<br>恰好经过<span>。</span>
+    </div>
+
+    <!-- 承接段落：从用户角度温和说明网站用途 -->
+    <div class="intro">
+        <p>
+            有些时候，你打开一个页面，只是想确认它是否与自己想找的东西一致。没有复杂的引导，也没有刻意的渲染，只是安安静静地告诉你：这里是 <a href="https://portals-leyu.com">leyu</a>，一个你可以从任意起点走向目的地的入口。
+        </p>
+        <p>
+            它没有堆砌名词，也没有急于解释一切。它只是存在，像一个简单的路标：指向你可能需要的服务、资讯或工具。你不需要猜测——看一眼，就能知道这里是否值得停留。
+        </p>
+    </div>
+
+    <!-- 特点列表：干净克制，聚焦识别与直觉 -->
+    <div class="features">
+        <div class="features-title">一眼可辨的特点</div>
+
+        <div class="feature-item">
+            <div class="feature-marker"></div>
+            <div class="feature-text">名称本身即线索——<strong>leyu</strong> 简短、可读，无歧义，适合快速记忆与回访。</div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-marker"></div>
+            <div class="feature-text">页面结构清晰，信息层级分明，没有无关的装饰或弹窗干扰判断。</div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-marker"></div>
+            <div class="feature-text">指向明确：从标题到正文，你能在几秒内理解这个网站提供什么，以及它是否与你有关。</div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-marker"></div>
+            <div class="feature-text">保持一致的视觉节奏——留白、字体、间距，都为了让你在浏览时不产生疲劳。</div>
+        </div>
+    </div>
+
+    <!-- 温和结尾：不催促，不夸张 -->
+    <div class="closing">
+        <div class="closing-note">
+            如果你觉得这里可能对你有用，可以把它记下来。之后再来时，它还会是同样的样子。
+            <small>—— 没有多余的变化，只有稳定的存在。</small>
+        </div>
+        <div style="font-size:0.85rem; opacity:0.5; white-space: nowrap;">portals-leyu.com</div>
+    </div>
+
+</div>
+</body>
+</html>
